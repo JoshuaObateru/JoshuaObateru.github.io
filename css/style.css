@@ -8,5 +8,8 @@ body{
 }
 .header{
     height: 100vh;
-    background-image: url("../img/headphone2.jpg");
+    background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.9), rgba(14, 13, 13, 0.9)) ,url("../img/headphone3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
