@@ -30,12 +30,18 @@ body{
 .heading-primary{
     color: white;
     text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 .heading-primary-main{
     display: block;
     font-size: 60px;
     font-weight: 400;
-    letter-spacing: 32px;
+    /* letter-spacing: 32px; */
+    letter-spacing: 8px;
+    animation-name: moveinLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 .heading-primary-sub{
     display: block;
@@ -43,4 +49,63 @@ body{
     font-weight: 500;
     letter-spacing: 17px;
     padding: 10px;
+    animation-name: moveinRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes moveinLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    70%{
+        opacity: 0.8;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveinRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    70%{
+        opacity: 0.8;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.btn:link, .btn:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 39px;
+    display: inline-block;
+    border-radius: 100px;
+    color: rgb(236, 229, 229);
+
+}
+.btn:hover{
+    transform: translateY(-2px);
+    padding: 15px 41px;
+    color: white;
+}
+.btn:active{
+    transform: translateY(-1px);
+    color: white;
+}
+.btn-white{
+    background-color: none;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    color: rgb(236, 229, 229);
 }
