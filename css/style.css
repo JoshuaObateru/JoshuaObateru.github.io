@@ -3,19 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* @media (max-width: 600px){
+    .html{
+        font-size: 50%;
+    }
+} */
 body{
-    padding: 10px;   
+    padding: 1%;
 }
  .back{
     background-color: rgba(227, 233, 219, 0.705);
-    
+    margin-top: 3%;
 }
 .header{
     height: 100vh;
     background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.9), rgba(14, 13, 13, 0.9)) ,url("../img/headphone3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top; 
+    background-position: top;
     /* clip-path: ellipse(); */
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
     position: relative;
@@ -27,6 +32,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .heading-primary{
     color: white;
     text-transform: uppercase;
@@ -35,13 +41,40 @@ body{
 }
 .heading-primary-main{
     display: block;
-    font-size: 60px;
+    font-size: 63px;
     font-weight: 400;
     /* letter-spacing: 32px; */
     letter-spacing: 8px;
     animation-name: moveinLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+}
+.heading-primary-main2{
+    font-size: 45px;
+    font-weight: 400;
+    /* letter-spacing: 32px; */
+    letter-spacing: 8px;
+    animation-name: moveinLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+@media (max-width: 500px){
+    .heading-primary-main{
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+    .heading-primary-main2{
+        font-size: 28px;
+    }
+    .heading-primary-sub{
+        font-size: 15px;
+        margin-top: 10px;
+        letter-spacing: 10px;
+    }
+    .font{
+        font-size: 13px;
+    }
+
 }
 .heading-primary-sub{
     display: block;
@@ -98,10 +131,11 @@ body{
 .btn:link, .btn:visited{
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 39px;
+    padding: 2% 39px;
     display: inline-block;
     border-radius: 100px;
     color: rgb(236, 229, 229);
+    margin-bottom: 3%;
     transition: all .2s;
     position: relative;
 

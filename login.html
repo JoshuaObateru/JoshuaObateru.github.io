@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap -->
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pricing.css">
+    <script src="main.js"></script>
+    <style>
+        div.navbar-header button.navbar-toggle{
+          background-color: white !important;
+          border-radius: 50%;
+          width: contain;
+          height: 4rem;
+          box-shadow: 0 1.2rem 3rem rgba(0,0,0, 0.6);
+          /* color: black; */
+        }
+         .navbar-toggle .icon-bar{
+          background-image:linear-gradient(to right bottom, rgba(58, 24, 24, 0.9), rgba(34, 5, 5, 0.9));
+        }
+        .price-background{
+            background-image: linear-gradient(to right bottom, rgba(36, 39, 39, 0.9), rgba(39, 61, 90, 0.9));
+            height: max-content;
+            /* height: 100vh; */
+        }
+        .footer{
+            /* background-image:linear-gradient(to right bottom, rgba(58, 24, 24, 0.3), rgba(34, 5, 5, 0.3)); */
+            background-image: linear-gradient(to right bottom, rgba(36, 39, 39, 0.3), rgba(39, 61, 90, 0.3));
+            color: white;
+            margin: 0%
+        }
+        .foot{
+            padding: 1% 2%;
+            text-align: center;
+            letter-spacing: .4rem;
+        }
+        .black{
+            /* color: black; */
+            text-align: center;
+        }
+        .login-form{
+            height: 70vh;
+            /* background-color: rgba(245, 245, 220, 0.95); */
+            background-image: linear-gradient(to right bottom, rgba(240, 240, 228, 0.9), rgba(255, 255, 255, 0.9));
+            margin: 10% 0%;
+        }
+        @media (max-width: 800px){
+            .login-form{
+                margin: 30% 0% 10% 0%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid price-background">
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="color:white; letter-spacing:.3rem">KOdigitals LOGO</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+  
+                           <li>
+                              <a href="index.html">Home</a>
+                          </li>
+                         <li>
+                              <a href="pricing.html">Services</a>
+                          </li>
+                          <li>
+                              <a href="contact.html">Contact</a>
+                          </li>
+                          <li>
+                              <a href="login.html">Login</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        
+        <div class="row ">
+            <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-3 col-sm-3"></div>
+                <div class="col-md-6 col-sm-6 text-center login-form">
+                    <h2  style="letter-spacing:.5rem; padding: .5rem;">LOGIN</h2>
+                </div>
+                <div class="col-md-3 col-sm-3"></div>
+            </section>
+
+        </div>
+
+        <div class="row " style="background-color:rgba(0, 0, 0, 0.897);">
+                <footer class="footer">
+                        <h4 class="foot font">information</h4>
+                        <div class="black">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="foot">
+                                             <h4 class="font">Contact Information:</h4><hr>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="foot">
+                                             <h4 class="font">&copy; Copyright@KOdigitals</h4><hr>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-4 col-sm-4 col-xs-12">
+                                         <div class="foot">
+                                                 <h4 class="font">Contact Developer</h4><hr>
+                                         </div>
+                                     </div>
+                        </div>
+
+                    </footer><hr>
+           </div>
+
+    </div>
+</body>
+<!-- core bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- jquery -->
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.js"></script>
+</html>

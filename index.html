@@ -10,25 +10,114 @@
     <!-- custom style -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <script src="main.js"></script>
+    <style>
+        .footer{
+            /* background-image:linear-gradient(to right bottom, rgba(58, 24, 24, 0.3), rgba(34, 5, 5, 0.3)); */
+            background-image: linear-gradient(to right bottom, rgba(36, 39, 39, 0.3), rgba(39, 61, 90, 0.3));
+            color: white;
+            margin: 0%
+        }
+        .foot{
+            padding: 1% 2%;
+            text-align: center;
+            letter-spacing: .4rem;
+        }
+        .black{
+            /* color: black; */
+            text-align: center;
+        }
+        div.navbar-header button.navbar-toggle{
+          background-color: white !important;
+          border-radius: 50%;
+          width: contain;
+          height: 4rem;
+          box-shadow: 0 1.2rem 3rem rgba(0,0,0, 0.6);
+          /* color: black; */
+        }
+         .navbar-toggle .icon-bar{
+          background-image:linear-gradient(to right bottom, rgba(58, 24, 24, 0.9), rgba(34, 5, 5, 0.9));
+        }
+    </style>
 </head>
 <body>
-    <div class="container-fluid back">
+    <div class="container-fluid">
         <div class="row">
-            <header class="header">
-
-                <div class="text-box col-lg-7 col-xs-12">
-                        <h1 class="heading-primary">
-                                <span class="heading-primary-main">W e b s t r e a m</span>
-                                <span class="heading-primary-sub">Get your music heard on all major platforms</span>
-                            </h1>
-
-                            <a href="#" class="btn btn-white">Sign up now</a>
+          <div style="margin-bottom:2%;">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html" style="color:white; letter-spacing:.3rem">KOdigitals LOGO</a>
                 </div>
-                
-            </header>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                         <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                       <li>
+                            <a href="pricing.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+            <div class="back">
+                    <header class="header">
+
+                            <div class="text-box col-lg-7 col-xs-12">
+                                    <h1 class="heading-primary">
+                                            <span class="heading-primary-main">K . O . <span class="heading-primary-main2">D i g i t a l s</span></span>
+                                            <span class="heading-primary-sub">Get your music heard on all major platforms</span>
+                                        </h1>
+
+                                        <!-- <marquee behavior="scroll" direction="" style="color:white,">Flora</marquee> -->
+
+                                        <a href="pricing.html" class="btn btn-white">Sign up now</a>
+                            </div>
+
+                        </header>
+            </div>
+           <div class="col md-12 col-sm-12 col-xs-12 " style="background-color:rgba(0, 0, 0, 0.897);">
+                <footer class="footer">
+                        <h4 class="foot font">information</h4>
+                        <div class="black">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="foot">
+                                             <h4 class="font">Contact Information:</h4><hr>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="foot">
+                                             <h4 class="font">&copy; Copyright@KOdigitals</h4><hr>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-4 col-sm-4 col-xs-12">
+                                         <div class="foot">
+                                                 <h4 class="font">Contact Developer</h4><hr>
+                                         </div>
+                                     </div>
+                        </div>
+
+                    </footer><hr>
+           </div>
+
         </div>
+
     </div>
-    
+
 </body>
 <!-- core bootstrap js -->
 <script src="js/bootstrap.min.js"></script>
